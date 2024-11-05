@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detección de dispositivo</title>
+    <script>
+        function detectarDispositivo() {
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                window.location.href = "movile.html";
+            } else {
+                window.location.href = "pcpc.html";
+            }
+        }
+    </script>
+</head>
+<body onload="detectarDispositivo()">
+    <p>Bienvenido</p>
+</body>
+</html>
+
+
